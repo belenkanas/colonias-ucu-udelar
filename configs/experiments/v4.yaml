@@ -1,0 +1,19 @@
+# Experimento v4
+#   python -m colonias.train configs/experiments/v4.yaml
+#   python -m colonias.evaluate configs/experiments/v4.yaml
+nombre: v4
+descripcion: Subdataset de 33 imágenes, 10 por clase (presentación v4, 17/06/2026)
+dataset: subdataset_v1
+variante: base
+modelo: yolov8m.pt
+seeds:
+- 0
+entrenamiento:
+  epochs: 100
+  imgsz: 640
+notas: 'La presentación dice "Large (m)": el modelo es medium.'
+resultado_informe: completar desde results.csv
+evaluacion:
+  conf: 0.5
+  iou_nms: 0.45
+  especie_desde: nombre_archivo

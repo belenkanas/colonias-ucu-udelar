@@ -1,0 +1,24 @@
+# Experimento v2
+#   python -m colonias.train configs/experiments/v2.yaml
+#   python -m colonias.evaluate configs/experiments/v2.yaml
+nombre: v2
+descripcion: '100 épocas y rebalance 70/15/15 (presentación v2, 09/06/2026). Pesos: best.pt'
+dataset: ucu_udelar_2026a_v2
+variante: base
+modelo: yolov8m.pt
+seeds:
+- 0
+ultralytics_original: 8.4.63
+entrenamiento:
+  epochs: 100
+  imgsz: 640
+notas: Configuración verificada en los train_args de best.pt (batch 16, optimizer auto, patience 100).
+resultado_informe:
+  val_mAP50: 0.478
+  val_mAP50_95: 0.252
+  val_precision: 0.578
+  val_recall: 0.57
+evaluacion:
+  conf: 0.5
+  iou_nms: 0.45
+  especie_desde: nombre_archivo

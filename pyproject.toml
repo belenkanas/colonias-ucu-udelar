@@ -1,0 +1,35 @@
+[project]
+name = "colonias"
+version = "1.0.0"
+description = "Detección, conteo y clasificación de colonias de E. coli, P. aeruginosa y S. aureus con YOLOv8"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "María Belén Kanas" },
+    { name = "Alejandro Piccardo" },
+    { name = "Leandro Pereira" },
+    { name = "Ignacio Silva" },
+]
+# Versión exacta de ultralytics: la usada en v7, v8, MLCA y AGAR.
+# Otra versión cambia defaults y la integración de C2f-MLCA puede dejar de funcionar.
+# torch se instala aparte según la GPU (en Colab ya viene instalado).
+dependencies = [
+    "ultralytics==8.4.163",
+    "roboflow",
+    "pandas",
+    "numpy",
+    "pyyaml",
+    "matplotlib",
+]
+
+[project.scripts]
+colonias-train = "colonias.train:main"
+colonias-evaluate = "colonias.evaluate:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

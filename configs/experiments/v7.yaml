@@ -1,0 +1,37 @@
+# Experimento v7
+#   python -m colonias.train configs/experiments/v7.yaml
+#   python -m colonias.evaluate configs/experiments/v7.yaml
+nombre: v7
+descripcion: 'Primera prueba con la receta de Pintavirooj et al. (2026): 10 épocas a 224 px, Adam (notebook
+  train_yolo_colab_v7)'
+dataset: subdataset_v2_v4
+variante: base
+modelo: yolov8m.pt
+seeds:
+- 0
+ultralytics_original: 8.4.163
+entrenamiento:
+  epochs: 10
+  imgsz: 224
+  batch: 32
+  optimizer: Adam
+  lr0: 0.0001
+  momentum: 0.937
+  weight_decay: 0.0001
+  degrees: 12.0
+  close_mosaic: 20
+  patience: 5
+  conf: 0.4
+  iou: 0.5
+  save_period: 10
+notas: 'No convergió: 224 px es el tamaño del paper para un recorte de UNA colonia, no para la placa entera.
+  conf e iou en train filtran también la validación de cada época.'
+resultado_informe:
+  val_mAP50: 0.106
+  val_mAP50_95: 0.04
+  val_precision: 0.384
+  val_recall: 0.233
+evaluacion:
+  conf: 0.5
+  iou_nms: 0.45
+  especie_desde: nombre_archivo

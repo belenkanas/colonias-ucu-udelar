@@ -1,0 +1,20 @@
+# Experimento v5
+#   python -m colonias.train configs/experiments/v5.yaml
+#   python -m colonias.evaluate configs/experiments/v5.yaml
+nombre: v5
+descripcion: Todas las imágenes con < 30 colonias, 165 fotos (presentación v5, 18/06/2026)
+dataset: CONFIRMAR
+variante: base
+modelo: yolov8m.pt
+seeds:
+- 0
+entrenamiento:
+  epochs: 100
+  imgsz: 640
+notas: La presentación muestra el link subdataset-ucu-udelar-2026-a/1, el mismo que v4, pero con 116/25/25
+  fotos. Confirmar proyecto y versión.
+resultado_informe: completar desde results.csv
+evaluacion:
+  conf: 0.5
+  iou_nms: 0.45
+  especie_desde: nombre_archivo

@@ -1,0 +1,17 @@
+# Dataset agar_subdataset_v1: se descarga con  python -m colonias.data agar_subdataset_v1
+workspace: ucuestudiantesproyecto-gmail-com
+proyecto: agar_subdataset
+version: 1
+clases: se leen del data.yaml (E. coli, P. aeruginosa, S. aureus)
+fotos:
+  train: 5823
+  valid: 1344
+  test: 1792
+cajas:
+  train: 149469
+  valid: 35401
+  test: 49292
+origen: AGAR oficial (Majchrowska et al., 2025), filtrado a 3 especies y convertido con AGAR2Roboflow
+  (Leandro Pereira)
+licencia: CC BY-NC (uso no comercial)
+notas: 'Los nombres de archivo son numéricos: la especie de cada placa sale de sus etiquetas.'

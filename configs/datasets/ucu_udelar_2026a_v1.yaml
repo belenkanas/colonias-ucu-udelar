@@ -1,0 +1,13 @@
+# Dataset ucu_udelar_2026a_v1: se descarga con  python -m colonias.data ucu_udelar_2026a_v1
+workspace: ucuestudiantesproyecto-gmail-com
+proyecto: ucu-udelar-2026-a
+version: 1
+clases:
+- col
+- osa
+- sau
+fotos:
+  train: 870
+  valid: 62
+notas: 'Dataset completo. Tiene anotaciones mixtas (cajas + segmentación): ultralytics descarta los segmentos.
+  Completar fotos de test.'

@@ -1,0 +1,13 @@
+# Dataset ucu_udelar_2026a_v3: se descarga con  python -m colonias.data ucu_udelar_2026a_v3
+workspace: ucuestudiantesproyecto-gmail-com
+proyecto: ucu-udelar-2026-a
+version: 3
+clases:
+- col
+- osa
+- sau
+particion: 80/10/10
+preprocesado: auto-orient; fit within 640x640; auto-contraste (contrast stretching)
+augmentaciones: flip H/V; brillo ±15 %; rotación ±45 %; saturación ±20 %; exposición ±10 %; blur 1,5 px;
+  ruido 1,25 %
+notas: Completar cantidad de fotos por split.

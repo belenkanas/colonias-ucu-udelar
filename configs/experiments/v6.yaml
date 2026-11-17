@@ -1,0 +1,18 @@
+# Experimento v6
+#   python -m colonias.train configs/experiments/v6.yaml
+#   python -m colonias.evaluate configs/experiments/v6.yaml
+nombre: v6
+descripcion: 'Subdataset_v2: ~30 colonias por placa y clases balanceadas (presentación v6, 02/07/2026)'
+dataset: subdataset_v2_v2
+variante: base
+modelo: yolov8m.pt
+seeds:
+- 0
+entrenamiento:
+  epochs: 100
+  imgsz: 640
+resultado_informe: completar desde results.csv
+evaluacion:
+  conf: 0.5
+  iou_nms: 0.45
+  especie_desde: nombre_archivo

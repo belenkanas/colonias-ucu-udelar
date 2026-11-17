@@ -1,0 +1,43 @@
+experimento,metrica,media,desvio,n_corridas,fuente
+v1,val_mAP50,0.404,,1,Presentación v1
+v1,val_mAP50_95,0.224,,1,Presentación v1
+v2,val_mAP50,0.478,,1,best.pt (train_metrics)
+v2,val_mAP50_95,0.252,,1,best.pt (train_metrics)
+v7,val_mAP50,0.106,,1,train_yolo_colab_v7.ipynb
+v7,val_mAP50_95,0.04,,1,train_yolo_colab_v7.ipynb
+v8,val_mAP50,0.928,,1,train_yolo_colab_v8.ipynb
+v8,val_mAP50_95,0.608,,1,train_yolo_colab_v8.ipynb
+v8,test_mAP50,0.778,,1,RESUMEN_COMPARACION.md (best_v8.pt evaluado)
+v8,test_especie,0.81,,1,RESUMEN_COMPARACION.md (best_v8.pt evaluado)
+mlca_v5_base,val_mAP50,0.94,0.02,3,"results/referencia/mlca_v5_colab.csv (Colab T4, batch 32, seeds 0-2)"
+mlca_v5_base,val_mAP50_95,0.62,0.017,3,"results/referencia/mlca_v5_colab.csv (Colab T4, batch 32, seeds 0-2)"
+mlca_v5_base,val_especie,0.903,0.024,3,"results/referencia/mlca_v5_colab.csv (Colab T4, batch 32, seeds 0-2)"
+mlca_v5_base,val_conteo_MAE,1.694,0.442,3,"results/referencia/mlca_v5_colab.csv (Colab T4, batch 32, seeds 0-2)"
+mlca_v5_base,test_mAP50,0.774,0.009,3,"results/referencia/mlca_v5_colab.csv (Colab T4, batch 32, seeds 0-2)"
+mlca_v5_base,test_mAP50_95,0.438,0.018,3,"results/referencia/mlca_v5_colab.csv (Colab T4, batch 32, seeds 0-2)"
+mlca_v5_base,test_especie,0.742,0.085,3,"results/referencia/mlca_v5_colab.csv (Colab T4, batch 32, seeds 0-2)"
+mlca_v5_base,test_conteo_MAE,1.065,0.18,3,"results/referencia/mlca_v5_colab.csv (Colab T4, batch 32, seeds 0-2)"
+mlca_v5_mlca,val_mAP50,0.95,0.012,3,"results/referencia/mlca_v5_colab.csv (Colab T4, batch 32, seeds 0-2)"
+mlca_v5_mlca,val_mAP50_95,0.629,0.006,3,"results/referencia/mlca_v5_colab.csv (Colab T4, batch 32, seeds 0-2)"
+mlca_v5_mlca,val_especie,0.875,0.042,3,"results/referencia/mlca_v5_colab.csv (Colab T4, batch 32, seeds 0-2)"
+mlca_v5_mlca,val_conteo_MAE,1.972,0.376,3,"results/referencia/mlca_v5_colab.csv (Colab T4, batch 32, seeds 0-2)"
+mlca_v5_mlca,test_mAP50,0.769,0.041,3,"results/referencia/mlca_v5_colab.csv (Colab T4, batch 32, seeds 0-2)"
+mlca_v5_mlca,test_mAP50_95,0.447,0.019,3,"results/referencia/mlca_v5_colab.csv (Colab T4, batch 32, seeds 0-2)"
+mlca_v5_mlca,test_especie,0.656,0.067,3,"results/referencia/mlca_v5_colab.csv (Colab T4, batch 32, seeds 0-2)"
+mlca_v5_mlca,test_conteo_MAE,1.183,0.342,3,"results/referencia/mlca_v5_colab.csv (Colab T4, batch 32, seeds 0-2)"
+agar_base,val_mAP50,0.961,,1,RESUMEN_AGAR.md (seed 0)
+agar_base,val_mAP50_95,0.638,,1,RESUMEN_AGAR.md (seed 0)
+agar_base,val_especie,0.97,,1,RESUMEN_AGAR.md (seed 0)
+agar_base,val_conteo_MAE,1.685,,1,RESUMEN_AGAR.md (seed 0)
+agar_base,test_mAP50,0.958,,1,RESUMEN_AGAR.md (seed 0)
+agar_base,test_mAP50_95,0.62,,1,RESUMEN_AGAR.md (seed 0)
+agar_base,test_especie,0.968,,1,RESUMEN_AGAR.md (seed 0)
+agar_base,test_conteo_MAE,1.925,,1,RESUMEN_AGAR.md (seed 0)
+agar_mlca,val_mAP50,0.963,,1,RESUMEN_AGAR.md (seed 0)
+agar_mlca,val_mAP50_95,0.638,,1,RESUMEN_AGAR.md (seed 0)
+agar_mlca,val_especie,0.968,,1,RESUMEN_AGAR.md (seed 0)
+agar_mlca,val_conteo_MAE,1.647,,1,RESUMEN_AGAR.md (seed 0)
+agar_mlca,test_mAP50,0.955,,1,RESUMEN_AGAR.md (seed 0)
+agar_mlca,test_mAP50_95,0.617,,1,RESUMEN_AGAR.md (seed 0)
+agar_mlca,test_especie,0.97,,1,RESUMEN_AGAR.md (seed 0)
+agar_mlca,test_conteo_MAE,1.89,,1,RESUMEN_AGAR.md (seed 0)

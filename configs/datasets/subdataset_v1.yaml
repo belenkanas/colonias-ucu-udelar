@@ -1,0 +1,16 @@
+# Dataset subdataset_v1: se descarga con  python -m colonias.data subdataset_v1
+workspace: ucuestudiantesproyecto-gmail-com
+proyecto: subdataset-ucu-udelar-2026-a
+version: 1
+clases:
+- col
+- osa
+- sau
+fotos:
+  train: 21
+  valid: 6
+  test: 6
+criterio: 10 imágenes por clase con colonias contables (~220 por clase)
+preprocesado: auto-orient; stretch 640x640
+augmentaciones: flip H/V; crop 0-22 %; brillo ±15 %; rotación ±45 %; saturación ±20 %; exposición ±10
+  %; blur 1,5 px; ruido 0,5 %

@@ -1,0 +1,14 @@
+# Dataset subdataset_v2_v5: se descarga con  python -m colonias.data subdataset_v2_v5
+workspace: ucuestudiantesproyecto-gmail-com
+proyecto: subdataset_v2-ucu-udelar-2026-a
+version: 5
+clases:
+- col
+- osa
+- sau
+fotos:
+  train: 102
+  valid: 24
+  test: 31
+notas: 'El "dataset v5" / "subdataset v5" del informe: best_v8.pt y los experimentos con MLCA. Valid:
+  290 colonias.'

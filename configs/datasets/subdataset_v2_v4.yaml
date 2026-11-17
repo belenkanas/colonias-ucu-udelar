@@ -1,0 +1,13 @@
+# Dataset subdataset_v2_v4: se descarga con  python -m colonias.data subdataset_v2_v4
+workspace: ucuestudiantesproyecto-gmail-com
+proyecto: subdataset_v2-ucu-udelar-2026-a
+version: 4
+clases:
+- col
+- osa
+- sau
+fotos:
+  train: 306
+  valid: 24
+notas: Usado en v7. 306 fotos de train = 102 x 3 salidas por augmentación de Roboflow (confirmar). Completar
+  test.

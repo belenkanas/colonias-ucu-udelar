@@ -1,0 +1,20 @@
+# Credenciales: la API key de Roboflow NUNCA se sube
+.env
+
+# Datos y salidas (se descargan / se generan al ejecutar)
+data/
+runs/
+*.pt
+*.zip
+
+# Python
+__pycache__/
+*.py[oc]
+*.egg-info/
+.venv/
+.ipynb_checkpoints/
+
+# Resultados generados localmente (los esperados sí se suben)
+results/*.csv
+!results/resultados_esperados.csv
+results/comparacion_con_esperados.csv

@@ -1,0 +1,18 @@
+# Experimento v3
+#   python -m colonias.train configs/experiments/v3.yaml
+#   python -m colonias.evaluate configs/experiments/v3.yaml
+nombre: v3
+descripcion: YOLOv8l, partición 80/10/10, auto-contraste (presentación v3, 11/06/2026)
+dataset: ucu_udelar_2026a_v3
+variante: base
+modelo: yolov8l.pt
+seeds:
+- 0
+entrenamiento:
+  epochs: 100
+  imgsz: 640
+resultado_informe: completar desde results.csv
+evaluacion:
+  conf: 0.5
+  iou_nms: 0.45
+  especie_desde: nombre_archivo

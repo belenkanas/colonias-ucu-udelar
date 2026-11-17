@@ -1,0 +1,17 @@
+# Dataset subdataset_v2_v2: se descarga con  python -m colonias.data subdataset_v2_v2
+workspace: ucuestudiantesproyecto-gmail-com
+proyecto: subdataset_v2-ucu-udelar-2026-a
+version: 2
+clases:
+- col
+- osa
+- sau
+fotos:
+  train: 106
+  valid: 26
+  test: 25
+criterio: placas con ~30 colonias y cantidades similares por clase (~530 por clase), filtradas con tags
+  en Roboflow
+preprocesado: auto-orient; stretch 640x640
+augmentaciones: flip H/V; brillo ±15 %; rotación ±45 %; saturación ±20 %; exposición ±10 %; blur 1 px;
+  ruido 0,5 %

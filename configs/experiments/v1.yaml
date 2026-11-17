@@ -1,0 +1,23 @@
+# Experimento v1
+#   python -m colonias.train configs/experiments/v1.yaml
+#   python -m colonias.evaluate configs/experiments/v1.yaml
+nombre: v1
+descripcion: 'Línea base: YOLOv8m sobre el dataset completo (presentación v1, 08/06/2026)'
+dataset: ucu_udelar_2026a_v1
+variante: base
+modelo: yolov8m.pt
+seeds:
+- 0
+ultralytics_original: 8.4.62
+entrenamiento:
+  epochs: 50
+  imgsz: 640
+notas: Se bajó de 100 épocas / 896 px a 50 / 640 por falta de memoria. El resto son defaults de ultralytics
+  (batch 16, optimizer auto).
+resultado_informe:
+  val_mAP50: 0.404
+  val_mAP50_95: 0.224
+evaluacion:
+  conf: 0.5
+  iou_nms: 0.45
+  especie_desde: nombre_archivo
